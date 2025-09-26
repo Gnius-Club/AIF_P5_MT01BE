@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM01B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1B 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes sean introducidos a los conceptos de condicionales y variables. Que aprendan a utilizar los sensores internos de la micro:bit (acelerómetro y temperatura) para construir dos proyectos prácticos: un dado digital que responde al movimiento y un termómetro simple, reforzando el ciclo de programación, prueba y transferencia a la placa.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y explicar conceptos.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Aprendizaje guiado por IA sobre nuevos bloques y lógica.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Implementación de planes, pruebas y mini-retos.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Demostración de prototipos y reflexión.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un dado digital funcional programado en la micro:bit que muestra un número aleatorio al agitarse, y opcionalmente, un termómetro que muestra la temperatura al presionar un botón.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                        <li>1 micro:bit con cable USB y portapilas por cada 2 estudiantes.</li>
+                                        <li>Computadoras o tabletas para programar.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Asegurar que las micro:bits estén listas y con baterías.</li>
+                                                <li>Tener la presentación de diapositivas (1-11) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos y los tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Tener una micro:bit física lista para demostrar cómo se agita y para hablar de los sensores internos.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión de hoy.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola de nuevo, creadores! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción y asegúrate de que todos reciban la bienvenida de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Xolo les da la bienvenida: "¡Hola de nuevo, creadores! Sus micro:bits ya responden a sus órdenes cuando presionan los botones. ¡Hoy les daremos superpoderes! Les enseñaremos a sentir el mundo que los rodea. ¿Qué pasaría si su micro:bit supiera si la agitan o si en la habitación hace frío o calor? ¡Vamos a desbloquear sus sentidos secretos!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutes</h2>
+                <p>Presentar los sensores internos de la micro:bit y el objetivo de la clase.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación de los Sensores ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Muestra la micro:bit y explica conceptualmente sus "sentidos secretos".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">(Sostén la micro:bit) "La sesión pasada usamos las partes que podíamos ver y tocar, como los botones. Pero la micro:bit tiene magia escondida adentro. Tiene sensores que no se ven.
+                                    <ul>
+                                        <li><strong>Acelerómetro:</strong> Dentro hay un sensor que siente el movimiento. Puede saber si la agitan, si la inclinan o si la dejan caer. ¡Es como el sentido del equilibrio de la micro:bit!</li>
+                                        <li><strong>Sensor de Temperatura:</strong> También puede 'sentir' la temperatura a su alrededor, midiendo el calor de su propio procesador. ¡Es un pequeño termómetro incorporado!</li>
+                                    </ul>"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy vamos a usar estos sentidos ocultos para que nuestra micro:bit reaccione al mundo real. Al final de esta sesión, podrán decir: <strong>'Yo puedo usar los sensores de movimiento y temperatura, entiendo cómo tomar decisiones en mi código, y he programado un dado digital que funciona al agitarlo.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los alumnos para que aprendan sobre los nuevos conceptos y bloques con la ayuda de Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para Explorar con Xolo ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5 y 6) Anuncia la actividad y da a los alumnos el comando exacto para que Xolo les enseñe.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es hora de ir al <strong>A.I. GYM</strong> para adquirir nuevos superpoderes! Para que Xolo les explique cómo funcionan, escriban en el chat este comando: <strong>"Mi perfil es [escribe tu perfil] y quiero que me enseñes sobre el poder de decidir con condicionales, cómo guardar datos en variables y los bloques para usar los sentidos de movimiento y temperatura."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Aprendizaje Guiado ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Monitorea a los estudiantes mientras interactúan con Xolo y refuerza los conceptos clave.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Xolo les está explicando conceptos muy poderosos. Recuerden lo que les dice: el bloque `si...entonces` es para tomar decisiones. El bloque `al agitar` es un nuevo "oyente" de eventos. Y las `variables` son como cajitas para guardar información. Si tienen alguna duda, ¡pregúntenle directamente a Xolo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Fases de diseño, obtención del plan y programación del dado digital y el termómetro.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Misión Principal: El Dado Digital ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 8 y 9) Guía a los equipos para que definan su idea y obtengan el plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Comienza el <strong>Brain Spark</strong>! Nuestra misión principal hoy es crear un 'Dado Digital'. Pónganse de acuerdo en su equipo de 2. ¿Cómo debería funcionar? Describan su idea a Xolo. Por ejemplo: <strong>"Queremos que al agitar la micro:bit, aparezca un número al azar del 1 al 6. Después de un segundo, la pantalla debe limpiarse."</strong> Xolo les dará el plan exacto:</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// PLAN DE BLOQUES para Dado Digital
+AL AGITAR:
+    mostrar número ( escoger al azar de 1 a 6 )
+    pausa (ms) [1000]
+    borrar pantalla</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: ¡Manos al Código! ⏰ 7 minutos</h3>
+                            <p>Indica a los equipos que implementen el plan del dado digital.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Ese es el plan perfecto! Abran MakeCode y construyan su dado digital. Recuerden buscar los bloques en las categorías correctas: 'Entrada' para `al agitar`, 'Matemáticas' para `escoger al azar` y 'Básico' para los demás. ¡Pruébenlo en el simulador y luego en la micro:bit real!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Mini-Reto (Si hay tiempo) ⏰ 3 minutos</h3>
+                            <p>Lanza el desafío opcional de crear un termómetro.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Ya funciona su dado? ¡Felicidades! Para los que terminaron, aquí va un mini-reto: ¡creen el termómetro! Pónganse de acuerdo en equipo y pidanle el plan a Xolo. Una idea puede ser: <strong>"Al presionar el botón A, nuestra micro:bit debe mostrar la temperatura actual."</strong>. ¡A ver quién lo logra!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Demostración de los dados digitales y reflexión final.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) Anuncia la actividad y pide una reflexión individual sobre la aleatoriedad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Excelente trabajo, equipos! Llegamos al <strong>Gnius STORM</strong>. Antes de mostrar sus dados, piensen un momento: ¿Qué pasaría en su programa si quitaran el bloque `escoger al azar` y solo pusieran `mostrar número 5`? ¿Sería igual de divertido?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Demo) ⏰ 3 minutos</h3>
+                            <p>Pide a cada equipo que demuestre su dado digital en acción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la demostración! Cada equipo nos mostrará su dado digital en acción. Agítenlo varias veces para que todos veamos que el resultado es diferente y al azar. ¡Ahora todos tienen suerte en su bolsillo!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) Cierra la sesión y anticipa la próxima clase sobre la radio.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelentes dados! Han logrado que sus micro:bits sientan el mundo. Xolo se despide: "¡Son unos genios! Pero por ahora, sus creaciones son solitarias. En nuestra próxima sesión, les daremos el poder de la radio. Aprenderán a hacer que una micro:bit le envíe mensajes secretos a otra. ¡Crearemos un juego inalámbrico!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
